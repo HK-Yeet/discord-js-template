@@ -12,6 +12,6 @@ import "dotenv/config";
     log("Loading Events", "info");
     await client.loadEvents(path.join(__dirname, "events"));
 
-    await client.login("Nzg3MDIxMDc3Njk5NDkzOTQ4.X9O4fw.kQtN55LhCUR3AIMHSPN1Ay6OYuQ");
+    await client.login(process.env.TOKEN);
 
 })();
